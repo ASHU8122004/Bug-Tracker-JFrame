@@ -25,7 +25,6 @@ public BugTracker() {
     JPanel buttonPanel = new JPanel();
     JButton addButton = new JButton("Add Bug");
     addButton.addActionListener(new ActionListener() {
-        @Override
         public void actionPerformed(ActionEvent e) {
             BugDialog dialog = new BugDialog(BugTracker.this);
             dialog.setVisible(true);
@@ -40,7 +39,6 @@ public BugTracker() {
 
     JButton editButton = new JButton("Edit Bug");
     editButton.addActionListener(new ActionListener() {
-        @Override
         public void actionPerformed(ActionEvent e) {
             int index = table.getSelectedRow();
             if (index == -1) {
@@ -64,7 +62,6 @@ public BugTracker() {
 
     JButton removeButton = new JButton("Remove Bug");
     removeButton.addActionListener(new ActionListener() {
-        @Override
         public void actionPerformed(ActionEvent e) {
             int index = table.getSelectedRow();
             if (index == -1) {
